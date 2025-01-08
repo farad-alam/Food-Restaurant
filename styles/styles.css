@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
 
 #hero {
   /* background-image: url("../assets/hero-bg.png"); */
@@ -165,8 +169,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   font-family: "work sans";
+
 }
 
 .warm-text {
@@ -177,27 +182,27 @@
   justify-content: center;
   align-items: center;
   /* align-content: center; */
-
 }
 .warm-h2 {
   /* flex-basis: 80%; */
   width: 515px;
   text-align: center;
-  margin:0;
+  margin: 0;
 }
-.warm-h2 h2{
+.warm-h2 h2 {
   /* width: 560px; */
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 24px;
+  color: white;
 }
-.warm-text span{
+.warm-text span {
   font-size: 16px;
   font-weight: 500;
   opacity: 0.6;
 }
 
-.warm-text .follow-div{
+.warm-text .follow-div {
   font-size: 21px;
   font-weight: 800;
   opacity: 0.7;
@@ -211,4 +216,77 @@
 }
 .socials svg {
   width: 35px;
+}
+
+/* WARM UP CSS */
+#warm-up {
+  position: relative;
+  margin-bottom: 150px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  width: 100%;
+  /* height: 70px; */
+  display: flex;
+  /* border: 1px solid red; */
+  /* justify-content: flex-end; */
+}
+
+#warm-image {
+  flex-basis: 50%;
+}
+#warm-image > img {
+  width: 100%;
+  /* height: 470px; */
+  height: 100%;
+  object-fit: cover;
+}
+
+#warm-text {
+  font-family: "Work Sans";
+  text-align: center;
+  align-content: center;
+  flex-basis: 50%;
+  /* border: 1px solid; */
+}
+#warm-h2 {
+  /* background-color: aqua; */
+  width: 560px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+#warm-text h2 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 42px;
+}
+#warm-text span {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  /* line-height: 42px; */
+}
+#warm-text #follow-div {
+  padding: 21px 7px 21px 7px;
+  margin-top: 48px;
+  border-top: 0.5px solid rgb(178, 171, 171);
+  border-bottom: 0.5px solid rgb(178, 171, 171);
+  margin-bottom: 32px;
+}
+
+#follow-div p {
+  font-size: 21px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+#socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#socials svg {
+  width: 28px;
 }
